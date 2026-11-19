@@ -1,0 +1,27 @@
+{
+  "name": "ocr.siliconwat.dev drawings",
+  "short_name": "demo.siliconwat.dev",
+  "description": "Drawings of ocr.siliconwat.dev, a free reader for the Khmer Tipitaka, in English and Khmer. They read and charge nothing.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fcfbfe",
+  "theme_color": "#c2410c",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

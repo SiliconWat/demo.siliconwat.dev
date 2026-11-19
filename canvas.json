@@ -1,0 +1,267 @@
+{
+ "pages": [
+  {
+   "id": "ocr",
+   "name": "ocr.siliconwat.dev"
+  }
+ ],
+ "artboards": [
+  {
+   "file": "S1.html",
+   "page": "ocr",
+   "title": "1 · Empty, English, phone",
+   "w": 390,
+   "h": 896,
+   "x": 0,
+   "y": 0
+  },
+  {
+   "file": "S1Km.html",
+   "page": "ocr",
+   "title": "1 · Empty, Khmer, phone",
+   "w": 390,
+   "h": 994,
+   "x": 0,
+   "y": 2165
+  },
+  {
+   "file": "S1b.html",
+   "page": "ocr",
+   "title": "1b · PDF page chooser, English, phone",
+   "w": 390,
+   "h": 1084,
+   "x": 470,
+   "y": 0
+  },
+  {
+   "file": "S1bKm.html",
+   "page": "ocr",
+   "title": "1b · PDF page chooser, Khmer, phone",
+   "w": 390,
+   "h": 1166,
+   "x": 470,
+   "y": 2165
+  },
+  {
+   "file": "S2.html",
+   "page": "ocr",
+   "title": "2 · First use: getting the reader ready, English, phone",
+   "w": 390,
+   "h": 844,
+   "x": 940,
+   "y": 0
+  },
+  {
+   "file": "S2Km.html",
+   "page": "ocr",
+   "title": "2 · First use: getting the reader ready, Khmer, phone",
+   "w": 390,
+   "h": 865,
+   "x": 940,
+   "y": 2165
+  },
+  {
+   "file": "S3.html",
+   "page": "ocr",
+   "title": "3 · Reading, English, phone",
+   "w": 390,
+   "h": 844,
+   "x": 1410,
+   "y": 0
+  },
+  {
+   "file": "S3Km.html",
+   "page": "ocr",
+   "title": "3 · Reading, Khmer, phone",
+   "w": 390,
+   "h": 869,
+   "x": 1410,
+   "y": 2165
+  },
+  {
+   "file": "S4.html",
+   "page": "ocr",
+   "title": "4 · Result, English, phone",
+   "w": 390,
+   "h": 844,
+   "x": 1880,
+   "y": 0
+  },
+  {
+   "file": "S4Km.html",
+   "page": "ocr",
+   "title": "4 · Result, Khmer, phone",
+   "w": 390,
+   "h": 865,
+   "x": 1880,
+   "y": 2165
+  },
+  {
+   "file": "S4r.html",
+   "page": "ocr",
+   "title": "4r · Result, roman letters on, English, phone",
+   "w": 390,
+   "h": 844,
+   "x": 2350,
+   "y": 0
+  },
+  {
+   "file": "S4rKm.html",
+   "page": "ocr",
+   "title": "4r · Result, roman letters on, Khmer, phone",
+   "w": 390,
+   "h": 903,
+   "x": 2350,
+   "y": 2165
+  },
+  {
+   "file": "S5.html",
+   "page": "ocr",
+   "title": "5 · No lines found, English, phone",
+   "w": 390,
+   "h": 869,
+   "x": 2820,
+   "y": 0
+  },
+  {
+   "file": "S5Km.html",
+   "page": "ocr",
+   "title": "5 · No lines found, Khmer, phone",
+   "w": 390,
+   "h": 903,
+   "x": 2820,
+   "y": 2165
+  },
+  {
+   "file": "S6.html",
+   "page": "ocr",
+   "title": "6 · Not this print, English, phone",
+   "w": 390,
+   "h": 844,
+   "x": 3290,
+   "y": 0
+  },
+  {
+   "file": "S6Km.html",
+   "page": "ocr",
+   "title": "6 · Not this print, Khmer, phone",
+   "w": 390,
+   "h": 865,
+   "x": 3290,
+   "y": 2165
+  },
+  {
+   "file": "S7.html",
+   "page": "ocr",
+   "title": "7 · About and credits, English, phone",
+   "w": 390,
+   "h": 1822,
+   "x": 3760,
+   "y": 0
+  },
+  {
+   "file": "S7Km.html",
+   "page": "ocr",
+   "title": "7 · About and credits, Khmer, phone",
+   "w": 390,
+   "h": 2005,
+   "x": 3760,
+   "y": 2165
+  },
+  {
+   "file": "S8.html",
+   "page": "ocr",
+   "title": "8 · A word's dictionary entry, English, phone",
+   "w": 390,
+   "h": 895,
+   "x": 4230,
+   "y": 0
+  },
+  {
+   "file": "S8Km.html",
+   "page": "ocr",
+   "title": "8 · A word's dictionary entry, Khmer, phone",
+   "w": 390,
+   "h": 924,
+   "x": 4230,
+   "y": 2165
+  },
+  {
+   "file": "S9.html",
+   "page": "ocr",
+   "title": "9 · A passage selected: Listen, Ask, English, phone",
+   "w": 390,
+   "h": 871,
+   "x": 4700,
+   "y": 0
+  },
+  {
+   "file": "S9Km.html",
+   "page": "ocr",
+   "title": "9 · A passage selected: Listen, Ask, Khmer, phone",
+   "w": 390,
+   "h": 925,
+   "x": 4700,
+   "y": 2165
+  },
+  {
+   "file": "S10.html",
+   "page": "ocr",
+   "title": "10 · The Ask panel, English, phone",
+   "w": 390,
+   "h": 1044,
+   "x": 5170,
+   "y": 0
+  },
+  {
+   "file": "S10Km.html",
+   "page": "ocr",
+   "title": "10 · The Ask panel, Khmer, phone",
+   "w": 390,
+   "h": 1139,
+   "x": 5170,
+   "y": 2165
+  },
+  {
+   "file": "D1.html",
+   "page": "ocr",
+   "title": "1 · Empty, English, desktop",
+   "w": 1280,
+   "h": 800,
+   "x": 0,
+   "y": 4330
+  },
+  {
+   "file": "D4.html",
+   "page": "ocr",
+   "title": "4 · Result, English, desktop",
+   "w": 1280,
+   "h": 800,
+   "x": 1360,
+   "y": 4330
+  },
+  {
+   "file": "S1Dark.html",
+   "page": "ocr",
+   "title": "1 · Empty, dark pass, English, phone",
+   "w": 390,
+   "h": 896,
+   "x": 2720,
+   "y": 4330
+  },
+  {
+   "file": "S4Dark.html",
+   "page": "ocr",
+   "title": "4 · Result, dark pass, English, phone",
+   "w": 390,
+   "h": 844,
+   "x": 3190,
+   "y": 4330
+  }
+ ],
+ "annotations": [],
+ "launch": {
+  "page": "ocr",
+  "view": "canvas"
+ }
+}

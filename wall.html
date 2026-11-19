@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="site.webmanifest">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="bingbot" content="noindex,nofollow">
+<meta name="slurp" content="noindex,nofollow">
+<meta name="yandex" content="noindex,nofollow">
+<title>ocr.siliconwat.dev: the wall</title>
+<meta name="theme-color" content="#c2410c">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#fcfbfe; --surface:#f4f1fb; --surface-2:#ebe7f5;
+    --line:rgba(20,16,30,0.12); --line-strong:rgba(20,16,30,0.28);
+    --ink:#16141c; --ink-dim:#5b5766; --ink-faint:#8b8796;
+    --accent:#c2410c; --accent-soft:color-mix(in oklab,#c2410c 78%,#000); --accent-ink:#fff;
+    --accent-wash:color-mix(in oklab,#c2410c 10%,transparent); --accent-edge:color-mix(in oklab,#c2410c 28%,transparent);
+    --font-display:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+    --font-text:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+    --font-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --bg:#0a0a0f; --surface:#17171d; --surface-2:#1f1f27;
+    --line:rgba(255,255,255,0.08); --line-strong:rgba(255,255,255,0.18);
+    --ink:#f5f5f7; --ink-dim:#9b9ba5; --ink-faint:#6b6b76;
+    --accent:#fdba74; --accent-soft:#fdba74; --accent-ink:#0a0a0f;
+    --accent-wash:color-mix(in oklab,#fdba74 14%,transparent); --accent-edge:color-mix(in oklab,#fdba74 32%,transparent);
+  }}
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--surface-2);
+       color:var(--ink);font-family:var(--font-text)}
+  header{position:fixed;inset:0 0 auto 0;z-index:5;display:flex;align-items:center;gap:14px;
+       flex-wrap:wrap;padding:10px 14px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .home{font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:inherit;text-decoration:none}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap}
+  .tab{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;
+       border:1px solid var(--line-strong);background:transparent;color:var(--ink-dim);
+       border-radius:999px;padding:6px 12px;cursor:pointer;min-height:32px}
+  .tab[aria-pressed="true"]{background:var(--accent-wash);border-color:var(--accent-edge);color:var(--accent-soft)}
+  .tab .n{opacity:.55;margin-left:3px}
+  .zoom{margin-left:auto;display:flex;gap:6px;align-items:center}
+  .zoom button{width:36px;height:36px;border-radius:10px;border:1px solid var(--line-strong);
+       background:transparent;color:var(--ink);font-size:1rem;cursor:pointer}
+  .zoom .fit{width:auto;padding:0 13px;font-family:var(--font-mono);font-size:.72rem}
+  #stage{position:fixed;inset:0;top:0;overflow:hidden;cursor:grab;touch-action:none}
+  #stage.drag{cursor:grabbing}
+  #world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+  /* NO overflow:hidden here — it clips the caption, which sits above the frame.
+     The iframe does its own corner clipping instead. */
+  .frame{position:absolute;display:block;text-decoration:none;color:inherit;
+       background:var(--bg);border:1px solid var(--line);border-radius:10px;
+       box-shadow:0 8px 28px rgba(20,16,30,.10)}
+  .frame .cap{position:absolute;left:0;top:-26px;font-family:var(--font-mono);font-size:12px;
+       letter-spacing:.03em;color:var(--ink-dim);white-space:nowrap}
+  .frame iframe{border:0;display:block;pointer-events:none;background:var(--bg);border-radius:9px}
+  .note{position:absolute;background:#fdf3c7;color:#3b3320;border-radius:8px;padding:12px 14px;
+       font-size:13px;line-height:1.5;box-shadow:0 6px 18px rgba(20,16,30,.14);white-space:pre-wrap}
+  .hint{position:fixed;left:14px;bottom:12px;z-index:5;font-family:var(--font-mono);font-size:.66rem;
+       letter-spacing:.04em;text-transform:uppercase;color:var(--ink-faint);
+       background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+</style>
+<script src="./analytics.js?v=b32bb271"></script>
+</head>
+<body>
+<header>
+  <a class="home" href="./">&#8592; ocr.siliconwat.dev drawings</a>
+  <div class="tabs"><button class="tab" data-page="ocr">ocr.siliconwat.dev <span class="n">28</span></button></div>
+  <div class="zoom">
+    <button class="fit" id="fit">Fit</button>
+    <button id="out" aria-label="Zoom out">&#8722;</button>
+    <button id="in" aria-label="Zoom in">+</button>
+  </div>
+</header>
+<div id="stage"><div id="world"><div class="page" data-page="ocr" hidden><a class="frame" href="S1.html?v=8f406662" target="_blank" style="left:0px;top:0px;width:390px;height:896px"><span class="cap">1 · Empty, English, phone</span><iframe data-src="S1.html?v=8f406662" width="390" height="896" loading="lazy" title="1 · Empty, English, phone" scrolling="no"></iframe></a><a class="frame" href="S1b.html?v=59dea864" target="_blank" style="left:470px;top:0px;width:390px;height:1084px"><span class="cap">1b · PDF page chooser, English, phone</span><iframe data-src="S1b.html?v=59dea864" width="390" height="1084" loading="lazy" title="1b · PDF page chooser, English, phone" scrolling="no"></iframe></a><a class="frame" href="S2.html?v=0641ecc4" target="_blank" style="left:940px;top:0px;width:390px;height:844px"><span class="cap">2 · First use: getting the reader ready, English, phone</span><iframe data-src="S2.html?v=0641ecc4" width="390" height="844" loading="lazy" title="2 · First use: getting the reader ready, English, phone" scrolling="no"></iframe></a><a class="frame" href="S3.html?v=2348ffd0" target="_blank" style="left:1410px;top:0px;width:390px;height:844px"><span class="cap">3 · Reading, English, phone</span><iframe data-src="S3.html?v=2348ffd0" width="390" height="844" loading="lazy" title="3 · Reading, English, phone" scrolling="no"></iframe></a><a class="frame" href="S4.html?v=844ad8cc" target="_blank" style="left:1880px;top:0px;width:390px;height:844px"><span class="cap">4 · Result, English, phone</span><iframe data-src="S4.html?v=844ad8cc" width="390" height="844" loading="lazy" title="4 · Result, English, phone" scrolling="no"></iframe></a><a class="frame" href="S4r.html?v=2bed525d" target="_blank" style="left:2350px;top:0px;width:390px;height:844px"><span class="cap">4r · Result, roman letters on, English, phone</span><iframe data-src="S4r.html?v=2bed525d" width="390" height="844" loading="lazy" title="4r · Result, roman letters on, English, phone" scrolling="no"></iframe></a><a class="frame" href="S5.html?v=deb39119" target="_blank" style="left:2820px;top:0px;width:390px;height:869px"><span class="cap">5 · No lines found, English, phone</span><iframe data-src="S5.html?v=deb39119" width="390" height="869" loading="lazy" title="5 · No lines found, English, phone" scrolling="no"></iframe></a><a class="frame" href="S6.html?v=a05efe0c" target="_blank" style="left:3290px;top:0px;width:390px;height:844px"><span class="cap">6 · Not this print, English, phone</span><iframe data-src="S6.html?v=a05efe0c" width="390" height="844" loading="lazy" title="6 · Not this print, English, phone" scrolling="no"></iframe></a><a class="frame" href="S7.html?v=c29036ce" target="_blank" style="left:3760px;top:0px;width:390px;height:1822px"><span class="cap">7 · About and credits, English, phone</span><iframe data-src="S7.html?v=c29036ce" width="390" height="1822" loading="lazy" title="7 · About and credits, English, phone" scrolling="no"></iframe></a><a class="frame" href="S8.html?v=760f3000" target="_blank" style="left:4230px;top:0px;width:390px;height:895px"><span class="cap">8 · A word&#x27;s dictionary entry, English, phone</span><iframe data-src="S8.html?v=760f3000" width="390" height="895" loading="lazy" title="8 · A word&#x27;s dictionary entry, English, phone" scrolling="no"></iframe></a><a class="frame" href="S9.html?v=3e0160a0" target="_blank" style="left:4700px;top:0px;width:390px;height:871px"><span class="cap">9 · A passage selected: Listen, Ask, English, phone</span><iframe data-src="S9.html?v=3e0160a0" width="390" height="871" loading="lazy" title="9 · A passage selected: Listen, Ask, English, phone" scrolling="no"></iframe></a><a class="frame" href="S10.html?v=25455992" target="_blank" style="left:5170px;top:0px;width:390px;height:1044px"><span class="cap">10 · The Ask panel, English, phone</span><iframe data-src="S10.html?v=25455992" width="390" height="1044" loading="lazy" title="10 · The Ask panel, English, phone" scrolling="no"></iframe></a><a class="frame" href="S1Km.html?v=fb98224c" target="_blank" style="left:0px;top:2165px;width:390px;height:994px"><span class="cap">1 · Empty, Khmer, phone</span><iframe data-src="S1Km.html?v=fb98224c" width="390" height="994" loading="lazy" title="1 · Empty, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S1bKm.html?v=b6636be5" target="_blank" style="left:470px;top:2165px;width:390px;height:1166px"><span class="cap">1b · PDF page chooser, Khmer, phone</span><iframe data-src="S1bKm.html?v=b6636be5" width="390" height="1166" loading="lazy" title="1b · PDF page chooser, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S2Km.html?v=babbf44b" target="_blank" style="left:940px;top:2165px;width:390px;height:865px"><span class="cap">2 · First use: getting the reader ready, Khmer, phone</span><iframe data-src="S2Km.html?v=babbf44b" width="390" height="865" loading="lazy" title="2 · First use: getting the reader ready, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S3Km.html?v=beb54940" target="_blank" style="left:1410px;top:2165px;width:390px;height:869px"><span class="cap">3 · Reading, Khmer, phone</span><iframe data-src="S3Km.html?v=beb54940" width="390" height="869" loading="lazy" title="3 · Reading, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S4Km.html?v=4af38132" target="_blank" style="left:1880px;top:2165px;width:390px;height:865px"><span class="cap">4 · Result, Khmer, phone</span><iframe data-src="S4Km.html?v=4af38132" width="390" height="865" loading="lazy" title="4 · Result, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S4rKm.html?v=612c11d5" target="_blank" style="left:2350px;top:2165px;width:390px;height:903px"><span class="cap">4r · Result, roman letters on, Khmer, phone</span><iframe data-src="S4rKm.html?v=612c11d5" width="390" height="903" loading="lazy" title="4r · Result, roman letters on, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S5Km.html?v=c58b74f8" target="_blank" style="left:2820px;top:2165px;width:390px;height:903px"><span class="cap">5 · No lines found, Khmer, phone</span><iframe data-src="S5Km.html?v=c58b74f8" width="390" height="903" loading="lazy" title="5 · No lines found, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S6Km.html?v=1cac7701" target="_blank" style="left:3290px;top:2165px;width:390px;height:865px"><span class="cap">6 · Not this print, Khmer, phone</span><iframe data-src="S6Km.html?v=1cac7701" width="390" height="865" loading="lazy" title="6 · Not this print, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S7Km.html?v=28b63775" target="_blank" style="left:3760px;top:2165px;width:390px;height:2005px"><span class="cap">7 · About and credits, Khmer, phone</span><iframe data-src="S7Km.html?v=28b63775" width="390" height="2005" loading="lazy" title="7 · About and credits, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S8Km.html?v=1ce5050f" target="_blank" style="left:4230px;top:2165px;width:390px;height:924px"><span class="cap">8 · A word&#x27;s dictionary entry, Khmer, phone</span><iframe data-src="S8Km.html?v=1ce5050f" width="390" height="924" loading="lazy" title="8 · A word&#x27;s dictionary entry, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S9Km.html?v=50616131" target="_blank" style="left:4700px;top:2165px;width:390px;height:925px"><span class="cap">9 · A passage selected: Listen, Ask, Khmer, phone</span><iframe data-src="S9Km.html?v=50616131" width="390" height="925" loading="lazy" title="9 · A passage selected: Listen, Ask, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="S10Km.html?v=1febad10" target="_blank" style="left:5170px;top:2165px;width:390px;height:1139px"><span class="cap">10 · The Ask panel, Khmer, phone</span><iframe data-src="S10Km.html?v=1febad10" width="390" height="1139" loading="lazy" title="10 · The Ask panel, Khmer, phone" scrolling="no"></iframe></a><a class="frame" href="D1.html?v=2b22eeec" target="_blank" style="left:0px;top:4330px;width:1280px;height:800px"><span class="cap">1 · Empty, English, desktop</span><iframe data-src="D1.html?v=2b22eeec" width="1280" height="800" loading="lazy" title="1 · Empty, English, desktop" scrolling="no"></iframe></a><a class="frame" href="D4.html?v=25f77956" target="_blank" style="left:1360px;top:4330px;width:1280px;height:800px"><span class="cap">4 · Result, English, desktop</span><iframe data-src="D4.html?v=25f77956" width="1280" height="800" loading="lazy" title="4 · Result, English, desktop" scrolling="no"></iframe></a><a class="frame" href="S1Dark.html?v=bf5736ed" target="_blank" style="left:2720px;top:4330px;width:390px;height:896px"><span class="cap">1 · Empty, dark pass, English, phone</span><iframe data-src="S1Dark.html?v=bf5736ed" width="390" height="896" loading="lazy" title="1 · Empty, dark pass, English, phone" scrolling="no"></iframe></a><a class="frame" href="S4Dark.html?v=c4dc6cea" target="_blank" style="left:3190px;top:4330px;width:390px;height:844px"><span class="cap">4 · Result, dark pass, English, phone</span><iframe data-src="S4Dark.html?v=c4dc6cea" width="390" height="844" loading="lazy" title="4 · Result, dark pass, English, phone" scrolling="no"></iframe></a></div></div></div>
+<p class="hint">Drag to pan &#183; scroll or pinch to zoom &#183; tap a screen to open it</p>
+<script>
+(function(){
+  var stage=document.getElementById('stage'), world=document.getElementById('world');
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  var s=1, tx=0, ty=0, active=null;
+  function apply(){ world.style.transform='translate('+tx+'px,'+ty+'px) scale('+s+')'; }
+  function head(){ return document.querySelector('header').offsetHeight; }
+  function boxOf(page){
+    var els=[].slice.call(page.children), b={x1:1e9,y1:1e9,x2:-1e9,y2:-1e9};
+    els.forEach(function(el){
+      var x=parseFloat(el.style.left)||0, y=parseFloat(el.style.top)||0;
+      var w=parseFloat(el.style.width)||240, h=parseFloat(el.style.height)||el.offsetHeight||120;
+      b.x1=Math.min(b.x1,x); b.y1=Math.min(b.y1,y-30); b.x2=Math.max(b.x2,x+w); b.y2=Math.max(b.y2,y+h);
+    });
+    return b;
+  }
+  function fit(){
+    if(!active) return;
+    var b=boxOf(active), pad=48, top=head();
+    var vw=window.innerWidth-pad*2, vh=window.innerHeight-top-pad*2;
+    s=Math.min(vw/Math.max(1,b.x2-b.x1), vh/Math.max(1,b.y2-b.y1), 1);
+    tx=pad-b.x1*s + Math.max(0,(vw-(b.x2-b.x1)*s))/2;
+    ty=top+pad-b.y1*s;
+    apply();
+  }
+  function show(id){
+    [].slice.call(document.querySelectorAll('.page')).forEach(function(p){
+      var on=p.getAttribute('data-page')===id; p.hidden=!on; if(on) active=p;
+    });
+    tabs.forEach(function(t){ t.setAttribute('aria-pressed', String(t.getAttribute('data-page')===id)); });
+    // load this page's frames once it is shown
+    [].slice.call(active.querySelectorAll('iframe[data-src]')).forEach(function(f){
+      f.src=f.getAttribute('data-src'); f.removeAttribute('data-src');
+    });
+    fit();
+  }
+  tabs.forEach(function(t){ t.addEventListener('click', function(){ show(t.getAttribute('data-page')); }); });
+  document.getElementById('fit').addEventListener('click', fit);
+  function zoomAt(f, cx, cy){
+    var ns=Math.min(3, Math.max(0.06, s*f));
+    tx=cx-(cx-tx)*(ns/s); ty=cy-(cy-ty)*(ns/s); s=ns; apply();
+  }
+  document.getElementById('in').addEventListener('click', function(){ zoomAt(1.25, innerWidth/2, innerHeight/2); });
+  document.getElementById('out').addEventListener('click', function(){ zoomAt(0.8, innerWidth/2, innerHeight/2); });
+  stage.addEventListener('wheel', function(e){
+    e.preventDefault();
+    if(e.ctrlKey||e.metaKey) zoomAt(Math.pow(0.995,e.deltaY), e.clientX, e.clientY);
+    else { tx-=e.deltaX; ty-=e.deltaY; apply(); }
+  }, {passive:false});
+  var pts={}, last=null, moved=false;
+  stage.addEventListener('pointerdown', function(e){
+    pts[e.pointerId]={x:e.clientX,y:e.clientY}; moved=false;
+    stage.setPointerCapture(e.pointerId); stage.classList.add('drag');
+  });
+  stage.addEventListener('pointermove', function(e){
+    if(!pts[e.pointerId]) return;
+    var ids=Object.keys(pts);
+    var prev=pts[e.pointerId]; pts[e.pointerId]={x:e.clientX,y:e.clientY};
+    if(ids.length===1){
+      tx+=e.clientX-prev.x; ty+=e.clientY-prev.y;
+      if(Math.abs(e.clientX-prev.x)+Math.abs(e.clientY-prev.y)>2) moved=true;
+      apply();
+    } else if(ids.length===2){
+      var a=pts[ids[0]], b=pts[ids[1]];
+      var dist=Math.hypot(a.x-b.x,a.y-b.y);
+      if(last) zoomAt(dist/last, (a.x+b.x)/2, (a.y+b.y)/2);
+      last=dist; moved=true;
+    }
+  });
+  function up(e){ delete pts[e.pointerId]; if(!Object.keys(pts).length){ last=null; stage.classList.remove('drag'); } }
+  stage.addEventListener('pointerup', up); stage.addEventListener('pointercancel', up);
+  // a pan must not count as a tap on a frame
+  stage.addEventListener('click', function(e){ if(moved){ e.preventDefault(); e.stopPropagation(); } }, true);
+  window.addEventListener('resize', fit);
+  show(tabs[0].getAttribute('data-page'));
+})();
+</script>
+</body>
+</html>
