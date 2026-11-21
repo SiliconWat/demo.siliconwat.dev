@@ -1,0 +1,933 @@
+{
+ "version": 1,
+ "surface": "ocr.siliconwat.dev",
+ "title": "ocr.siliconwat.dev",
+ "about": "The free page that reads printed pages of the Buddhist Institute Tipiṭaka (Pāli and Khmer) in a visitor's own browser.",
+ "accent": "#c2410c",
+ "made": "2026-11-21",
+ "commit": "8fab7eb",
+ "groups": [
+  {
+   "name": "header, footer, band",
+   "entries": [
+    {
+     "key": "share",
+     "en": "Share",
+     "km": "ចែករំលែក"
+    },
+    {
+     "key": "aboutLink",
+     "en": "About and credits",
+     "km": "អំពី និងការទទួលស្គាល់"
+    },
+    {
+     "key": "termsLink",
+     "en": "Privacy and terms",
+     "km": "ឯកជនភាព និងលក្ខខណ្ឌ"
+    },
+    {
+     "key": "visits",
+     "en": "Visits are counted without cookies.",
+     "km": "ការចូលមើលត្រូវបានរាប់ដោយគ្មានខូគី។"
+    },
+    {
+     "key": "system",
+     "en": "System",
+     "km": "ប្រព័ន្ធ"
+    },
+    {
+     "key": "light",
+     "en": "Light",
+     "km": "ភ្លឺ"
+    },
+    {
+     "key": "dark",
+     "en": "Dark",
+     "km": "ងងឹត"
+    }
+   ]
+  },
+  {
+   "name": "1 · empty",
+   "entries": [
+    {
+     "key": "title",
+     "en": "Read a page of the Tipiṭaka",
+     "km": "អានទំព័រមួយនៃព្រះត្រៃបិដក"
+    },
+    {
+     "key": "lede",
+     "en": "Pāli and Khmer printed in Khmer script, from the Buddhist Institute edition (1927–69). Free, and read on this device.",
+     "km": "បាលី និងខ្មែរ ដែលបោះពុម្ពជាអក្សរខ្មែរ ពីព្រះត្រៃបិដកបោះពុម្ពរបស់ពុទ្ធសាសនបណ្ឌិត្យ (១៩២៧–១៩៦៩)។ ឥតគិតថ្លៃ ហើយអាននៅលើឧបករណ៍នេះ។"
+    },
+    {
+     "key": "dropTitle",
+     "en": "Drop a page here",
+     "km": "ទម្លាក់ទំព័រនៅទីនេះ"
+    },
+    {
+     "key": "dropSub",
+     "en": "A photo, a scan or a PDF",
+     "km": "រូបថត ស្កេន ឬ PDF"
+    },
+    {
+     "key": "chooseFile",
+     "en": "Choose a file",
+     "km": "ជ្រើសរើសឯកសារ"
+    },
+    {
+     "key": "takePhoto",
+     "en": "Take a photo",
+     "km": "ថតរូប"
+    },
+    {
+     "key": "privacy",
+     "en": "Your page is read on this device. It is never uploaded.",
+     "km": "ទំព័ររបស់អ្នកត្រូវបានអាននៅលើឧបករណ៍នេះ។ វាមិនត្រូវបានផ្ញើទៅកន្លែងណាឡើយ។"
+    },
+    {
+     "key": "readerHead",
+     "en": "Reader",
+     "km": "ម៉ូដែលអាន"
+    },
+    {
+     "key": "accurate",
+     "en": "Most accurate",
+     "km": "ត្រឹមត្រូវបំផុត"
+    },
+    {
+     "key": "accurateSub",
+     "en": "The fewest mistakes. Chosen for you.",
+     "km": "កំហុសតិចបំផុត។ បានជ្រើសរើសជូនអ្នក។"
+    },
+    {
+     "key": "public",
+     "en": "Public domain",
+     "km": "កម្មសិទ្ធិសាធារណៈ"
+    },
+    {
+     "key": "publicSub",
+     "en": "A few more mistakes. Its file belongs to everyone.",
+     "km": "កំហុសច្រើនជាងបន្តិច។ ឯកសាររបស់វាជាកម្មសិទ្ធិរបស់មនុស្សគ្រប់គ្នា។"
+    },
+    {
+     "key": "licenseNote",
+     "en": "The license matters only if you share the model file itself.",
+     "km": "អាជ្ញាប័ណ្ណមានន័យ តែនៅពេលអ្នកចែករំលែកឯកសារម៉ូដែលនោះផ្ទាល់ប៉ុណ្ណោះ។"
+    },
+    {
+     "key": "whatReads",
+     "en": "What it reads",
+     "km": "អ្វីដែលវាអាន"
+    },
+    {
+     "key": "whatReadsShort",
+     "en": "Both pages of each opening: the Pāli, and its Khmer translation. It tells which one a page is, and you can switch it.",
+     "km": null
+    }
+   ]
+  },
+  {
+   "name": "1b · PDF page chooser",
+   "entries": [
+    {
+     "key": "choosePages",
+     "en": "Choose pages",
+     "km": "ជ្រើសរើសទំព័រ"
+    },
+    {
+     "key": "nPages",
+     "en": "{n} pages",
+     "km": "{n} ទំព័រ"
+    },
+    {
+     "key": "onePage",
+     "en": "One page",
+     "km": "មួយទំព័រ"
+    },
+    {
+     "key": "aRange",
+     "en": "A range",
+     "km": "ចន្លោះទំព័រ"
+    },
+    {
+     "key": "fromPage",
+     "en": "From page",
+     "km": "ពីទំព័រ"
+    },
+    {
+     "key": "toPage",
+     "en": "To page",
+     "km": "ដល់ទំព័រ"
+    },
+    {
+     "key": "pagesInFile",
+     "en": "Pages in this file",
+     "km": "ទំព័រក្នុងឯកសារនេះ"
+    },
+    {
+     "key": "pagesNote",
+     "en": "Pages are read in order, one at a time, on this device. A whole volume is long, so choose the pages you need.",
+     "km": "ទំព័រត្រូវបានអានតាមលំដាប់ ម្តងមួយទំព័រ នៅលើឧបករណ៍នេះ។ សៀវភៅមួយក្បាលវែងណាស់ ដូច្នេះសូមជ្រើសតែទំព័រដែលអ្នកត្រូវការ។"
+    },
+    {
+     "key": "readThese",
+     "en": "Read these pages",
+     "km": "អានទំព័រទាំងនេះ"
+    },
+    {
+     "key": "chooseAnother",
+     "en": "Choose another file",
+     "km": "ជ្រើសឯកសារផ្សេង"
+    },
+    {
+     "key": "page",
+     "en": "Page",
+     "km": "ទំព័រ"
+    },
+    {
+     "key": "pageN",
+     "en": "Page {n}",
+     "km": "ទំព័រ {n}"
+    }
+   ]
+  },
+  {
+   "name": "1c · adjust the page (a photo or a screenshot)",
+   "entries": [
+    {
+     "key": "adjustTitle",
+     "en": "Adjust the page",
+     "km": "តម្រឹមទំព័រ"
+    },
+    {
+     "key": "adjustHelp",
+     "en": "Move the corners to the page's corners.",
+     "km": "រំកិលជ្រុងទាំងបួន ទៅត្រង់ជ្រុងនៃទំព័រ។"
+    },
+    {
+     "key": "adjustKeys",
+     "en": "Arrow keys move a corner. Hold Shift to move it further.",
+     "km": "គ្រាប់ចុចព្រួញ រំកិលជ្រុងមួយ។ សង្កត់ Shift ដើម្បីរំកិលវាឆ្ងាយជាងនេះ។"
+    },
+    {
+     "key": "cornerTL",
+     "en": "Top-left corner",
+     "km": "ជ្រុងខាងលើ ខាងឆ្វេង"
+    },
+    {
+     "key": "cornerTR",
+     "en": "Top-right corner",
+     "km": "ជ្រុងខាងលើ ខាងស្តាំ"
+    },
+    {
+     "key": "cornerBR",
+     "en": "Bottom-right corner",
+     "km": "ជ្រុងខាងក្រោម ខាងស្តាំ"
+    },
+    {
+     "key": "cornerBL",
+     "en": "Bottom-left corner",
+     "km": "ជ្រុងខាងក្រោម ខាងឆ្វេង"
+    },
+    {
+     "key": "yourPicture",
+     "en": "Your picture",
+     "km": "រូបរបស់អ្នក"
+    },
+    {
+     "key": "readThis",
+     "en": "Read this page",
+     "km": "អានទំព័រនេះ"
+    },
+    {
+     "key": "wholePicture",
+     "en": "Use the whole picture",
+     "km": "ប្រើរូបទាំងមូល"
+    },
+    {
+     "key": "backToText",
+     "en": "Back to the text",
+     "km": "ត្រឡប់ទៅអត្ថបទវិញ"
+    },
+    {
+     "key": "adjustThis",
+     "en": "Adjust this page",
+     "km": "តម្រឹមទំព័រនេះ"
+    }
+   ]
+  },
+  {
+   "name": "2 · first use",
+   "entries": [
+    {
+     "key": "ready",
+     "en": "Getting the reader ready",
+     "km": "កំពុងរៀបចំម៉ូដែលអាន"
+    },
+    {
+     "key": "readyLede",
+     "en": "This happens once. The reader is kept in this browser, so next time it starts straight away.",
+     "km": "ការនេះកើតឡើងតែម្តង។ ម៉ូដែលត្រូវបានរក្សាទុកក្នុងកម្មវិធីរុករកនេះ ដូច្នេះលើកក្រោយវាចាប់ផ្តើមភ្លាមៗ។"
+    },
+    {
+     "key": "waiting",
+     "en": "Your page, waiting to be read",
+     "km": "ទំព័ររបស់អ្នក កំពុងរង់ចាំការអាន"
+    },
+    {
+     "key": "working",
+     "en": "Working",
+     "km": "កំពុងដំណើរការ"
+    },
+    {
+     "key": "fromSite",
+     "en": "It comes from this site, not from anywhere else, and your page stays on this device.",
+     "km": "វាមកពីគេហទំព័រនេះ មិនមែនពីកន្លែងផ្សេងទេ ហើយទំព័ររបស់អ្នកនៅតែលើឧបករណ៍នេះ។"
+    }
+   ]
+  },
+  {
+   "name": "3 · reading",
+   "entries": [
+    {
+     "key": "reading",
+     "en": "Reading",
+     "km": "កំពុងអាន"
+    },
+    {
+     "key": "leafIs",
+     "en": "This page is in",
+     "km": "ទំព័រនេះជា"
+    },
+    {
+     "key": "pali",
+     "en": "Pāli",
+     "km": "បាលី"
+    },
+    {
+     "key": "khmer",
+     "en": "Khmer",
+     "km": "ខ្មែរ"
+    },
+    {
+     "key": "leafNote",
+     "en": "Found by the reader. Tap the other to switch.",
+     "km": "ម៉ូដែលបានរកឃើញ។ ចុចមួយទៀត ដើម្បីប្តូរ។"
+    },
+    {
+     "key": "readSoFar",
+     "en": "Read so far",
+     "km": "បានអានរួច"
+    },
+    {
+     "key": "stop",
+     "en": "Stop",
+     "km": "បញ្ឈប់"
+    },
+    {
+     "key": "yourPage",
+     "en": "Your page",
+     "km": "ទំព័ររបស់អ្នក"
+    },
+    {
+     "key": "linesOutlined",
+     "en": "The lines it found are outlined. Check the text against them.",
+     "km": null
+    }
+   ]
+  },
+  {
+   "name": "4 · result",
+   "entries": [
+    {
+     "key": "theText",
+     "en": "The text",
+     "km": "អត្ថបទ"
+    },
+    {
+     "key": "roman",
+     "en": "Show in roman letters",
+     "km": "បង្ហាញជាអក្សរឡាតាំង"
+    },
+    {
+     "key": "copy",
+     "en": "Copy",
+     "km": "ចម្លង"
+    },
+    {
+     "key": "download",
+     "en": "Download .txt",
+     "km": "ទាញយក .txt"
+    },
+    {
+     "key": "checkPrint",
+     "en": "Check it against the print.",
+     "km": "សូមផ្ទៀងផ្ទាត់វាជាមួយសៀវភៅបោះពុម្ព។"
+    },
+    {
+     "key": "tapHint",
+     "en": "Tap a word for its meaning. Select words to hear them or ask about them.",
+     "km": "ចុចលើពាក្យមួយ ដើម្បីមើលន័យ។ ជ្រើសពាក្យ ដើម្បីស្តាប់ ឬសួរអំពីវា។"
+    },
+    {
+     "key": "clickHint",
+     "en": "Click a word for its meaning. Select words to hear them or ask about them.",
+     "km": "ចុចលើពាក្យមួយ ដើម្បីមើលន័យ។ ជ្រើសពាក្យ ដើម្បីស្តាប់ ឬសួរអំពីវា។"
+    },
+    {
+     "key": "tapHintNoListen",
+     "en": "Tap a word for its meaning.",
+     "km": "ចុចលើពាក្យមួយ ដើម្បីមើលន័យ។"
+    },
+    {
+     "key": "clickHintNoListen",
+     "en": "Click a word for its meaning.",
+     "km": "ចុចលើពាក្យមួយ ដើម្បីមើលន័យ។"
+    },
+    {
+     "key": "romanNote",
+     "en": "Roman letters are our own transliteration, for convenience. The Khmer script is the text.",
+     "km": "អក្សរឡាតាំងជាការចម្លងអក្សររបស់យើង ដើម្បីភាពងាយស្រួល។ អក្សរខ្មែរគឺជាអត្ថបទ។"
+    },
+    {
+     "key": "readAnother",
+     "en": "Read another page",
+     "km": "អានទំព័រផ្សេងទៀត"
+    },
+    {
+     "key": "edit",
+     "en": "Edit",
+     "km": "កែអត្ថបទ"
+    },
+    {
+     "key": "done",
+     "en": "Done",
+     "km": "រួចរាល់"
+    },
+    {
+     "key": "editNote",
+     "en": "Your edits live only in this page. Copy or download them to keep them.",
+     "km": "ការកែរបស់អ្នក មាននៅតែក្នុងទំព័រនេះ។ សូមចម្លង ឬទាញយក ដើម្បីរក្សាទុកវា។"
+    }
+   ]
+  },
+  {
+   "name": "5 · nothing found",
+   "entries": [
+    {
+     "key": "nothingTitle",
+     "en": "No lines of text found",
+     "km": "រកមិនឃើញបន្ទាត់អត្ថបទទេ"
+    },
+    {
+     "key": "nothingLede",
+     "en": "The reader found no printed lines in this picture.",
+     "km": "ម៉ូដែលរកមិនឃើញបន្ទាត់អក្សរបោះពុម្ពក្នុងរូបនេះទេ។"
+    },
+    {
+     "key": "whatHelps",
+     "en": "What helps",
+     "km": "អ្វីដែលជួយបាន"
+    },
+    {
+     "key": "help1",
+     "en": "A flat page, well lit, with no shadow across it.",
+     "km": "ទំព័ររាបស្មើ មានពន្លឺល្អ គ្មានស្រមោលពាក់កណ្តាល។"
+    },
+    {
+     "key": "help2",
+     "en": "The whole page in the picture, taken straight on.",
+     "km": "ទំព័រទាំងមូលនៅក្នុងរូប ថតត្រង់ពីលើ។"
+    },
+    {
+     "key": "help3",
+     "en": "A page of the Buddhist Institute edition (1927–69).",
+     "km": "ទំព័រនៃព្រះត្រៃបិដកបោះពុម្ពរបស់ពុទ្ធសាសនបណ្ឌិត្យ (១៩២៧–១៩៦៩)។"
+    },
+    {
+     "key": "scanBest",
+     "en": "A scan reads best. Photos from a phone have not been measured yet.",
+     "km": "ស្កេនអានបានល្អបំផុត។ រូបថតពីទូរសព្ទ មិនទាន់ត្រូវបានវាស់វែងនៅឡើយទេ។"
+    },
+    {
+     "key": "tryAnother",
+     "en": "Try another page",
+     "km": "សាកល្បងទំព័រផ្សេង"
+    }
+   ]
+  },
+  {
+   "name": "6 · not this print",
+   "entries": [
+    {
+     "key": "otherTitle",
+     "en": "This may not be the print it knows",
+     "km": "នេះប្រហែលមិនមែនជាអក្សរបោះពុម្ពដែលវាស្គាល់ទេ"
+    },
+    {
+     "key": "otherLede",
+     "en": "The reader was trained on one edition's typeface, the Buddhist Institute's Tipiṭaka (1927–69), and reads other prints poorly.",
+     "km": "ម៉ូដែលនេះត្រូវបានបង្ហាត់លើពុម្ពអក្សរនៃការបោះពុម្ពតែមួយ គឺព្រះត្រៃបិដករបស់ពុទ្ធសាសនបណ្ឌិត្យ (១៩២៧–១៩៦៩) ហើយអានការបោះពុម្ពផ្សេងៗបានមិនល្អទេ។"
+    },
+    {
+     "key": "showAnyway",
+     "en": "Show what it read anyway",
+     "km": "បង្ហាញអ្វីដែលវាបានអាន"
+    }
+   ]
+  },
+  {
+   "name": "7 · about and credits",
+   "entries": [
+    {
+     "key": "aboutTitle",
+     "en": "About and credits",
+     "km": "អំពី និងការទទួលស្គាល់"
+    },
+    {
+     "key": "whatReadsLong",
+     "en": "Pāli and Khmer printed in Khmer script: both pages of each opening of the Buddhist Institute edition of the Tipiṭaka (Phnom Penh, 1927–69). It tells which one a page is, and you can switch it.",
+     "km": "បាលី និងខ្មែរ ដែលបោះពុម្ពជាអក្សរខ្មែរ៖ ទំព័រទាំងពីរនៃការបើកនីមួយៗ នៃព្រះត្រៃបិដកបោះពុម្ពរបស់ពុទ្ធសាសនបណ្ឌិត្យ (ភ្នំពេញ ១៩២៧–១៩៦៩)។ វាដឹងថាទំព័រនីមួយៗជាភាសាណា ហើយអ្នកអាចប្តូរវាបាន។"
+    },
+    {
+     "key": "howWell",
+     "en": "How well it reads",
+     "km": "វាអានបានល្អប៉ុណ្ណា"
+    },
+    {
+     "key": "howWell1",
+     "en": "On pages the models never saw, read here from PDFs of the edition, Most accurate got 1.6% of characters wrong on Pāli pages and 1.2% on Khmer pages; Public domain 2.1% and 2.2%.",
+     "km": "លើទំព័រដែលម៉ូដែលមិនធ្លាប់ឃើញ (អានពី PDF នៃការបោះពុម្ព) ត្រឹមត្រូវបំផុត ខុស ១,៦% នៃតួអក្សរ លើទំព័របាលី និង ១,២% លើទំព័រខ្មែរ ហើយ កម្មសិទ្ធិសាធារណៈ ខុស ២,១% និង ២,២%។"
+    },
+    {
+     "key": "howWell2",
+     "en": "It was trained on one edition's typeface and learned from one transcriber's typing, including some of their habits. The Vinaya volumes read least well, and photos from a phone have not been measured yet.",
+     "km": "វាត្រូវបានបង្ហាត់លើពុម្ពអក្សរនៃការបោះពុម្ពតែមួយ ហើយរៀនពីការវាយអក្សររបស់អ្នកចម្លងម្នាក់ រួមទាំងទម្លាប់ខ្លះរបស់គាត់។ ភាគវិន័យអានបានខ្សោយជាងគេ ហើយរូបថតពីទូរសព្ទមិនទាន់ត្រូវបានវាស់វែងនៅឡើយទេ។"
+    },
+    {
+     "key": "checkWhat",
+     "en": "Check what it reads against the print.",
+     "km": "សូមផ្ទៀងផ្ទាត់អ្វីដែលវាអាន ជាមួយសៀវភៅបោះពុម្ព។"
+    },
+    {
+     "key": "staysEnglish",
+     "en": "",
+     "km": "សេចក្តីអំពីឯកជនភាព អាជ្ញាប័ណ្ណ និងការទទួលស្គាល់ ខាងក្រោមនេះ នៅជាភាសាអង់គ្លេស រហូតដល់អ្នកអានជនជាតិខ្មែរអនុម័តការបកប្រែ។"
+    },
+    {
+     "key": "privacyHead",
+     "en": "Your privacy",
+     "km": "ឯកជនភាពរបស់អ្នក"
+    },
+    {
+     "key": "twoReaders",
+     "en": "The two readers",
+     "km": "ម៉ូដែលអានទាំងពីរ"
+    },
+    {
+     "key": "credits",
+     "en": "Credits",
+     "km": "ការទទួលស្គាល់"
+    },
+    {
+     "key": "dhp",
+     "en": "The gift of the Dhamma surpasses every gift. Dhammapada 354",
+     "km": "ធម្មទាន ឈ្នះទានទាំងពួង។ ធម្មបទ ៣៥៤"
+    }
+   ]
+  },
+  {
+   "name": "8 · a word's entry",
+   "entries": [
+    {
+     "key": "dictName",
+     "en": "Samdech Chuon Nath's dictionary",
+     "km": "វចនានុក្រម សម្តេចព្រះសង្ឃរាជ ជួន ណាត"
+    },
+    {
+     "key": "viaEnding",
+     "en": "You tapped {tapped}. This is {head}, the same word without its Pāli ending.",
+     "km": "អ្នកបានចុចលើ {tapped}។ នេះគឺ {head} ពាក្យដដែល ដោយគ្មានចុងពាក្យបាលី។"
+    },
+    {
+     "key": "abbrPali",
+     "en": "Pāli",
+     "km": "បាលី"
+    },
+    {
+     "key": "abbrNoun",
+     "en": "noun",
+     "km": "នាម"
+    },
+    {
+     "key": "dictNote",
+     "en": "A Khmer dictionary: it fits Khmer pages, and Pāli words that entered Khmer. When a word has no entry, it says so and never guesses.",
+     "km": "វចនានុក្រមខ្មែរ៖ វាសមនឹងទំព័រខ្មែរ និងពាក្យបាលីដែលចូលមកក្នុងភាសាខ្មែរ។ ពេលពាក្យមួយគ្មានក្នុងវចនានុក្រម វាប្រាប់ដូច្នោះ ហើយមិនទាយឡើយ។"
+    },
+    {
+     "key": "noEntry",
+     "en": "This word has no entry.",
+     "km": "ពាក្យនេះគ្មានក្នុងវចនានុក្រម។"
+    },
+    {
+     "key": "close",
+     "en": "Close",
+     "km": "បិទ"
+    }
+   ]
+  },
+  {
+   "name": "9 · a passage selected",
+   "entries": [
+    {
+     "key": "listen",
+     "en": "Listen",
+     "km": "ស្តាប់"
+    },
+    {
+     "key": "askAbout",
+     "en": "Ask about this",
+     "km": "សួរអំពីនេះ"
+    },
+    {
+     "key": "khmerVoice",
+     "en": "Khmer voice",
+     "km": "សំឡេងខ្មែរ"
+    },
+    {
+     "key": "woman",
+     "en": "woman",
+     "km": "ស្ត្រី"
+    },
+    {
+     "key": "man",
+     "en": "man",
+     "km": "បុរស"
+    },
+    {
+     "key": "listenNote",
+     "en": "Listen sends only the words you selected to our voice service, which has Azure's Khmer voices read them aloud. Nothing is sent until you press Listen. Your image and the rest of the text stay on this device.",
+     "km": "ស្តាប់ ផ្ញើតែពាក្យដែលអ្នកបានជ្រើស ទៅសេវាសំឡេងរបស់យើង ដែលឱ្យសំឡេងខ្មែររបស់ Azure អានឮៗ។ គ្មានអ្វីត្រូវបានផ្ញើទេ រហូតដល់អ្នកចុច ស្តាប់។ រូបភាព និងអត្ថបទផ្សេងទៀតរបស់អ្នក នៅលើឧបករណ៍នេះ។"
+    }
+   ]
+  },
+  {
+   "name": "10 · ask",
+   "entries": [
+    {
+     "key": "askTitle",
+     "en": "Ask about this passage",
+     "km": "សួរអំពីអត្ថបទនេះ"
+    },
+    {
+     "key": "yourQuestion",
+     "en": "Your question",
+     "km": "សំណួររបស់អ្នក"
+    },
+    {
+     "key": "askIn",
+     "en": "Ask in",
+     "km": "សួរនៅ"
+    },
+    {
+     "key": "justCopy",
+     "en": "Just copy it",
+     "km": "ចម្លងប៉ុណ្ណោះ"
+    },
+    {
+     "key": "justCopySub",
+     "en": "The passage and your question, ready to paste anywhere",
+     "km": "អត្ថបទ និងសំណួររបស់អ្នក រួចរាល់សម្រាប់បិទភ្ជាប់គ្រប់ទីកន្លែង"
+    },
+    {
+     "key": "opensNewTab",
+     "en": "Opens in a new tab",
+     "km": "បើកក្នុងផ្ទាំងថ្មី"
+    },
+    {
+     "key": "copyThenOpen",
+     "en": "Ask copies the passage and your question, then opens the assistant. Paste them there.",
+     "km": "សួរ ចម្លងអត្ថបទ និងសំណួររបស់អ្នក រួចបើកជំនួយការ។ សូមបិទភ្ជាប់នៅទីនោះ។"
+    },
+    {
+     "key": "fromSiliconWat",
+     "en": "From Silicon Wat℠",
+     "km": "ពី Silicon Wat℠"
+    },
+    {
+     "key": "askCaution",
+     "en": "AI assistants may assume a different edition's wording. Check what it says against the print.",
+     "km": "ជំនួយការ AI អាចសន្មតយកពាក្យពេចន៍នៃការបោះពុម្ពផ្សេង។ សូមផ្ទៀងផ្ទាត់អ្វីដែលវានិយាយ ជាមួយសៀវភៅបោះពុម្ព។"
+    },
+    {
+     "key": "ask",
+     "en": "Ask",
+     "km": "សួរ"
+    },
+    {
+     "key": "nothingLeaves",
+     "en": "Nothing leaves this page until you press Ask.",
+     "km": "គ្មានអ្វីចេញពីទំព័រនេះទេ រហូតដល់អ្នកចុច សួរ។"
+    }
+   ]
+  },
+  {
+   "name": "toasts and problems: NOT DRAWN",
+   "entries": [
+    {
+     "key": "copied",
+     "en": "Copied",
+     "km": "បានចម្លង"
+    },
+    {
+     "key": "copiedPaste",
+     "en": "Copied. Paste it into the assistant.",
+     "km": "បានចម្លង។ សូមបិទភ្ជាប់ទៅក្នុងជំនួយការ។"
+    },
+    {
+     "key": "linkCopied",
+     "en": "Link copied",
+     "km": "បានចម្លងតំណ"
+    },
+    {
+     "key": "notAFile",
+     "en": "Choose a photo, a scan or a PDF.",
+     "km": "សូមជ្រើស រូបថត ស្កេន ឬ PDF។"
+    },
+    {
+     "key": "cannotOpen",
+     "en": "This file could not be opened.",
+     "km": "មិនអាចបើកឯកសារនេះបានទេ។"
+    },
+    {
+     "key": "cannotRead",
+     "en": "The page could not be read. Try again.",
+     "km": "មិនអាចអានទំព័រនេះបានទេ។ សូមសាកល្បងម្តងទៀត។"
+    },
+    {
+     "key": "cannotCopy",
+     "en": "Could not copy here.",
+     "km": "មិនអាចចម្លងនៅទីនេះបានទេ។"
+    },
+    {
+     "key": "pdfAlone",
+     "en": "A PDF is read on its own. Choose it by itself.",
+     "km": "PDF មួយត្រូវអានដាច់ដោយឡែក។ សូមជ្រើសវាតែមួយ។"
+    },
+    {
+     "key": "meaning",
+     "en": "Meaning",
+     "km": "ន័យ"
+    },
+    {
+     "key": "tooLong",
+     "en": "Select a shorter passage to hear it.",
+     "km": "សូមជ្រើសអត្ថបទខ្លីជាងនេះ ដើម្បីស្តាប់។"
+    },
+    {
+     "key": "didNotWork",
+     "en": "That did not work. Try again.",
+     "km": "មិនបានសម្រេចទេ។ សូមសាកល្បងម្តងទៀត។"
+    },
+    {
+     "key": "bandEn",
+     "en": "Khmer: our draft, not yet reviewed",
+     "km": "Khmer: our draft, not yet reviewed"
+    },
+    {
+     "key": "bandKm",
+     "en": "ភាសាខ្មែរ៖ សេចក្តីព្រាងរបស់យើង មិនទាន់បានពិនិត្យ",
+     "km": "ភាសាខ្មែរ៖ សេចក្តីព្រាងរបស់យើង មិនទាន់បានពិនិត្យ"
+    }
+   ]
+  },
+  {
+   "name": "Waiting · About and credits (shown in English until translated)",
+   "waiting": true,
+   "entries": [
+    {
+     "key": "x.privacy",
+     "en": "Your images and text are read on this device and never uploaded: the page is built so that it cannot send them. Two things leave only when you press: a passage you choose to hear (to our voice service and Azure) and a passage you ask about (to the assistant you chose). Visits are counted without cookies, and the count never sees an image or a word.",
+     "km": null
+    },
+    {
+     "key": "x.licenses",
+     "en": "Most accurate: Apache-2.0. Public domain: CC0. The license matters only if you share a model file itself. The page images used in training are not released; the transcriber's typed text is published as a dataset (CC0), crediting the Buddhist Institute.",
+     "km": null
+    },
+    {
+     "key": "x.credits.transcription.label",
+     "en": "Transcription",
+     "km": null
+    },
+    {
+     "key": "x.credits.transcription",
+     "en": "Se Mong Ly (លី ម៉ុង សែ)",
+     "km": null
+    },
+    {
+     "key": "x.credits.text.label",
+     "en": "Text",
+     "km": null
+    },
+    {
+     "key": "x.credits.text",
+     "en": "the Buddhist Institute edition of the Tipiṭaka (Phnom Penh, 1927–69)",
+     "km": null
+    },
+    {
+     "key": "x.credits.scans.label",
+     "en": "Scans",
+     "km": null
+    },
+    {
+     "key": "x.credits.scans",
+     "en": "Upāsikā Kang Huychan and family · Lok Kru Aggapaṇḍita But Savong · Srong Chanda · 5000-years.org, given as dhamma dāna",
+     "km": null
+    },
+    {
+     "key": "x.credits.made-by.label",
+     "en": "Made by",
+     "km": null
+    },
+    {
+     "key": "x.credits.made-by",
+     "en": "Silicon Wat℠, with Miss Aquarius℠ (AI collaboration, disclosed)",
+     "km": null
+    }
+   ]
+  },
+  {
+   "name": "Waiting · Privacy and terms (shown in English until translated)",
+   "waiting": true,
+   "entries": [
+    {
+     "key": "x.terms.title",
+     "en": "Privacy and terms",
+     "km": null
+    },
+    {
+     "key": "x.terms.draft",
+     "en": "Draft of 20 November 2026. Not yet reviewed by a lawyer.",
+     "km": null
+    },
+    {
+     "key": "x.terms.who-runs-this-page",
+     "en": "Who runs this page",
+     "km": null
+    },
+    {
+     "key": "x.terms.who-runs-this-page.p1",
+     "en": "ocr.siliconwat.dev is run by Thon Ly, personally, until Silicon Wat℠ has a legal entity of its own. It is free, it has no accounts, and nothing is sold here.",
+     "km": null
+    },
+    {
+     "key": "x.terms.privacy-what-never-leaves-your-device",
+     "en": "Privacy: what never leaves your device",
+     "km": null
+    },
+    {
+     "key": "x.terms.privacy-what-never-leaves-your-device.p1",
+     "en": "The pages you give it, as images or PDFs, are read in your own browser and are never uploaded. The page is built so that it cannot send them: its Content-Security-Policy lets it contact only this site, the visit counter below, and the voice service, and only when you ask.",
+     "km": null
+    },
+    {
+     "key": "x.terms.privacy-what-never-leaves-your-device.p2",
+     "en": "The text it reads stays on your device unless you choose otherwise: Copy and Download keep it on your device; Ask copies a passage for you to paste wherever you like, under that service's own terms.",
+     "km": null
+    },
+    {
+     "key": "x.terms.privacy-what-does-leave-and-when",
+     "en": "Privacy: what does leave, and when",
+     "km": null
+    },
+    {
+     "key": "x.terms.privacy-what-does-leave-and-when.p1",
+     "en": "Listen: only the words you selected, and only when you press Listen, go to our voice service (tts.siliconwat.dev), which has Microsoft Azure's Khmer voices read them aloud. The service keeps the audio of each passage, filed under a fingerprint of the passage and never with who asked, so a repeated passage need not be read again; it counts requests per network address for about a minute to prevent abuse, and keeps no record of the passages themselves.",
+     "km": null
+    },
+    {
+     "key": "x.terms.privacy-what-does-leave-and-when.p2",
+     "en": "Visits: each page view is counted without cookies, by Cloudflare Web Analytics and by Silicon Wat's own counter (thonly.org), which records the page, the referring page, your time zone, your browser's description of itself, and a random identifier kept in your browser's storage. The count never sees an image or a word you read.",
+     "km": null
+    },
+    {
+     "key": "x.terms.privacy-what-does-leave-and-when.p3",
+     "en": "Errors: when reading fails, a short report of the error (where it happened, its name and message, with every Khmer-script character removed, and the version of this page) goes to the same counter, so it can be fixed. It never carries an image or any of the text.",
+     "km": null
+    },
+    {
+     "key": "x.terms.privacy-what-does-leave-and-when.p4",
+     "en": "Stored in your browser, nowhere else: your language, theme and reader choice, the random visit identifier, and the reader models once downloaded, so they need not be downloaded again. Clearing this site's data in your browser removes them all.",
+     "km": null
+    },
+    {
+     "key": "x.terms.what-the-reader-gives-you",
+     "en": "What the reader gives you",
+     "km": null
+    },
+    {
+     "key": "x.terms.what-the-reader-gives-you.p1",
+     "en": "A machine reading of a printed page. It makes mistakes, and it was trained on one edition's typeface. Check what it reads against the print before you rely on it.",
+     "km": null
+    },
+    {
+     "key": "x.terms.what-the-reader-gives-you.p2",
+     "en": "The text you read is yours to use. The text of the Tipiṭaka belongs to everyone; please credit the Buddhist Institute's edition when you share a transcription of it.",
+     "km": null
+    },
+    {
+     "key": "x.terms.what-the-reader-gives-you.p3",
+     "en": "The reader models are released separately: Most accurate under Apache-2.0, Public domain under CC0. The typed text they learned from is published as a dataset (CC0), crediting the Buddhist Institute; the page images used in training are not released.",
+     "km": null
+    },
+    {
+     "key": "x.terms.fair-use",
+     "en": "Fair use",
+     "km": null
+    },
+    {
+     "key": "x.terms.fair-use.p1",
+     "en": "Do not attack the page or the voice service, try to get around its limits, or use it to harass anyone.",
+     "km": null
+    },
+    {
+     "key": "x.terms.availability",
+     "en": "Availability",
+     "km": null
+    },
+    {
+     "key": "x.terms.availability.p1",
+     "en": "We aim to keep this page running, and we do not promise it will be uninterrupted or last forever. The models can be downloaded and run on your own machine.",
+     "km": null
+    },
+    {
+     "key": "x.terms.still-to-be-settled",
+     "en": "Still to be settled",
+     "km": null
+    },
+    {
+     "key": "x.terms.still-to-be-settled.p1",
+     "en": "Warranties, limits on liability, which law applies, and how disputes are handled will be set out in the final version.",
+     "km": null
+    },
+    {
+     "key": "x.terms.changes",
+     "en": "Changes",
+     "km": null
+    },
+    {
+     "key": "x.terms.changes.p1",
+     "en": "We will post changes here with a new date.",
+     "km": null
+    },
+    {
+     "key": "x.contact",
+     "en": "Contact: support@siliconwat.dev",
+     "km": null
+    }
+   ]
+  }
+ ]
+}
