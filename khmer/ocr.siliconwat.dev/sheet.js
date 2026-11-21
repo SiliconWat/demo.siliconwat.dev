@@ -32,7 +32,7 @@ const T = {
   tooMany: ["ថ្ងៃនេះបានរក្សាទុកច្រើនហើយ។ សូមបន្តនៅថ្ងៃស្អែក។", "That is a full day's entries. Please continue tomorrow."],
   writer: ["តំណរបស់អ្នកដំណើរការ។ អ្វីដែលអ្នករក្សាទុកនឹងនៅជាប់ ហើយមិនត្រូវបានលុបទេ។", "Your review link works. What you save is kept, and nothing is erased."],
   viewOnly: ["សម្រាប់មើលតែប៉ុណ្ណោះ។ អ្នកពិនិត្យបើកទំព័រនេះពីតំណផ្ទាល់ខ្លួនរបស់ពួកគេ។", "View only. Reviewers open this page from their own link."],
-  badLink: ["តំណនេះមិនដំណើរការទេ (ត្រូវបានបិទ ឬវាយខុស)។ ទំព័រនេះសម្រាប់មើលតែប៉ុណ្ណោះ។", "This link does not work (cancelled or mistyped). The page is view only."],
+  badLink: ["តំណនេះមិនដំណើរការទេ (ត្រូវបានបិទ ឬវាយខុស)។ ទំព័រនេះសម្រាប់មើលតែប៉ុណ្ណោះ។", "This link does not work (canceled or mistyped). The page is view only."],
   offline: ["មិនអាចភ្ជាប់ទៅកន្លែងរក្សាទុកបានទេ។ កំពុងបង្ហាញតែសេចក្តីព្រាងរបស់យើង ហើយមិនអាចរក្សាទុកបានទេ។", "The store could not be reached. Showing our drafts only; nothing can be saved."],
   show: ["បង្ហាញ", "Show"],
   all: ["ទាំងអស់", "All"],
