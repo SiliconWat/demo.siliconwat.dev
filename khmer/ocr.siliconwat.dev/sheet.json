@@ -3,9 +3,10 @@
  "surface": "ocr.siliconwat.dev",
  "title": "ocr.siliconwat.dev",
  "about": "The free page that reads printed pages of the Buddhist Institute Tipiṭaka (Pāli and Khmer) in a visitor's own browser.",
+ "about_km": "ទំព័រឥតគិតថ្លៃ ដែលអានទំព័របោះពុម្ពនៃព្រះត្រៃបិដក វិទ្យាស្ថានពុទ្ធសាសនបណ្ឌិត្យ (បាលី និងខ្មែរ) នៅក្នុងកម្មវិធីរុករករបស់អ្នកផ្ទាល់។",
  "accent": "#c2410c",
- "made": "2026-11-21",
- "commit": "d3f8143",
+ "made": "2026-11-22",
+ "commit": "5d4fc4f",
  "groups": [
   {
    "name": "header, footer, band",
@@ -45,7 +46,8 @@
      "en": "Dark",
      "km": "ងងឹត"
     }
-   ]
+   ],
+   "name_km": "ក្បាលទំព័រ បាតទំព័រ និងបន្ទះព័ត៌មាន"
   },
   {
    "name": "1 · empty",
@@ -125,7 +127,8 @@
      "en": "Both pages of each opening: the Pāli, and its Khmer translation. It tells which one a page is, and you can switch it.",
      "km": null
     }
-   ]
+   ],
+   "name_km": "1 · ទំព័រដើម មុនពេលជ្រើសរើសទំព័រ"
   },
   {
    "name": "1b · PDF page chooser",
@@ -190,7 +193,8 @@
      "en": "Page {n}",
      "km": "ទំព័រ {n}"
     }
-   ]
+   ],
+   "name_km": "1b · ការជ្រើសរើសទំព័រ PDF"
   },
   {
    "name": "1c · adjust the page (a photo or a screenshot)",
@@ -255,7 +259,8 @@
      "en": "Adjust this page",
      "km": "តម្រឹមទំព័រនេះ"
     }
-   ]
+   ],
+   "name_km": "1c · កែតម្រូវទំព័រ (រូបថត ឬរូបថតអេក្រង់)"
   },
   {
    "name": "2 · first use",
@@ -285,7 +290,8 @@
      "en": "It comes from this site, not from anywhere else, and your page stays on this device.",
      "km": "វាមកពីគេហទំព័រនេះ មិនមែនពីកន្លែងផ្សេងទេ ហើយទំព័ររបស់អ្នកនៅតែលើឧបករណ៍នេះ។"
     }
-   ]
+   ],
+   "name_km": "2 · ការប្រើលើកដំបូង"
   },
   {
    "name": "3 · reading",
@@ -335,7 +341,8 @@
      "en": "The lines it found are outlined. Check the text against them.",
      "km": null
     }
-   ]
+   ],
+   "name_km": "3 · កំពុងអាន"
   },
   {
    "name": "4 · result",
@@ -410,7 +417,8 @@
      "en": "Your edits live only in this page. Copy or download them to keep them.",
      "km": "ការកែរបស់អ្នក មាននៅតែក្នុងទំព័រនេះ។ សូមចម្លង ឬទាញយក ដើម្បីរក្សាទុកវា។"
     }
-   ]
+   ],
+   "name_km": "4 · លទ្ធផល"
   },
   {
    "name": "5 · nothing found",
@@ -455,7 +463,8 @@
      "en": "Try another page",
      "km": "សាកល្បងទំព័រផ្សេង"
     }
-   ]
+   ],
+   "name_km": "5 · រកមិនឃើញបន្ទាត់"
   },
   {
    "name": "6 · not this print",
@@ -475,7 +484,8 @@
      "en": "Show what it read anyway",
      "km": "បង្ហាញអ្វីដែលវាបានអាន"
     }
-   ]
+   ],
+   "name_km": "6 · មិនមែនជាការបោះពុម្ពនេះ"
   },
   {
    "name": "7 · about and credits",
@@ -535,7 +545,8 @@
      "en": "The gift of the Dhamma surpasses every gift. Dhammapada 354",
      "km": "ធម្មទាន ឈ្នះទានទាំងពួង។ ធម្មបទ ៣៥៤"
     }
-   ]
+   ],
+   "name_km": "7 · អំពី និងការទទួលស្គាល់"
   },
   {
    "name": "8 · a word's entry",
@@ -575,7 +586,8 @@
      "en": "Close",
      "km": "បិទ"
     }
-   ]
+   ],
+   "name_km": "8 · ពាក្យមួយក្នុងវចនានុក្រម"
   },
   {
    "name": "9 · a passage selected",
@@ -610,7 +622,8 @@
      "en": "Listen sends only the words you selected to our voice service, which has Azure's Khmer voices read them aloud. Nothing is sent until you press Listen. Your image and the rest of the text stay on this device.",
      "km": "ស្តាប់ ផ្ញើតែពាក្យដែលអ្នកបានជ្រើស ទៅសេវាសំឡេងរបស់យើង ដែលឱ្យសំឡេងខ្មែររបស់ Azure អានឮៗ។ គ្មានអ្វីត្រូវបានផ្ញើទេ រហូតដល់អ្នកចុច ស្តាប់។ រូបភាព និងអត្ថបទផ្សេងទៀតរបស់អ្នក នៅលើឧបករណ៍នេះ។"
     }
-   ]
+   ],
+   "name_km": "9 · អត្ថបទដែលបានជ្រើសរើស"
   },
   {
    "name": "10 · ask",
@@ -670,7 +683,8 @@
      "en": "Nothing leaves this page until you press Ask.",
      "km": "គ្មានអ្វីចេញពីទំព័រនេះទេ រហូតដល់អ្នកចុច សួរ។"
     }
-   ]
+   ],
+   "name_km": "10 · សួរ"
   },
   {
    "name": "toasts and problems: NOT DRAWN",
@@ -740,7 +754,8 @@
      "en": "ភាសាខ្មែរ៖ សេចក្តីព្រាងរបស់យើង មិនទាន់បានពិនិត្យ",
      "km": "ភាសាខ្មែរ៖ សេចក្តីព្រាងរបស់យើង មិនទាន់បានពិនិត្យ"
     }
-   ]
+   ],
+   "name_km": "សារខ្លីៗ និងបញ្ហា"
   },
   {
    "name": "Waiting · About and credits (shown in English until translated)",
@@ -796,7 +811,8 @@
      "en": "Silicon Wat℠, with Miss Aquarius℠ (AI collaboration, disclosed)",
      "km": null
     }
-   ]
+   ],
+   "name_km": "កំពុងរង់ចាំ · អំពី និងការទទួលស្គាល់ (បង្ហាញជាភាសាអង់គ្លេស រហូតដល់មានការបកប្រែ)"
   },
   {
    "name": "Waiting · Privacy and terms (shown in English until translated)",
@@ -927,7 +943,8 @@
      "en": "Contact: support@siliconwat.dev",
      "km": null
     }
-   ]
+   ],
+   "name_km": "កំពុងរង់ចាំ · ឯកជនភាព និងលក្ខខណ្ឌ (បង្ហាញជាភាសាអង់គ្លេស រហូតដល់មានការបកប្រែ)"
   }
  ]
 }
