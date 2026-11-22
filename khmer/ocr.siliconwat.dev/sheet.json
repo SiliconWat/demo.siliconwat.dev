@@ -5,7 +5,7 @@
  "about": "The free page that reads printed pages of the Buddhist Institute Tipiṭaka (Pāli and Khmer) in a visitor's own browser.",
  "accent": "#c2410c",
  "made": "2026-11-21",
- "commit": "3e39491",
+ "commit": "d3f8143",
  "groups": [
   {
    "name": "header, footer, band",
@@ -44,18 +44,6 @@
      "key": "dark",
      "en": "Dark",
      "km": "ងងឹត"
-    }
-   ],
-   "context": [
-    {
-     "url": "/S1Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S1.html",
-     "lang": "en",
-     "kind": "drawing"
     }
    ]
   },
@@ -137,18 +125,6 @@
      "en": "Both pages of each opening: the Pāli, and its Khmer translation. It tells which one a page is, and you can switch it.",
      "km": null
     }
-   ],
-   "context": [
-    {
-     "url": "/S1Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S1.html",
-     "lang": "en",
-     "kind": "drawing"
-    }
    ]
   },
   {
@@ -213,18 +189,6 @@
      "key": "pageN",
      "en": "Page {n}",
      "km": "ទំព័រ {n}"
-    }
-   ],
-   "context": [
-    {
-     "url": "/S1bKm.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S1b.html",
-     "lang": "en",
-     "kind": "drawing"
     }
    ]
   },
@@ -321,18 +285,6 @@
      "en": "It comes from this site, not from anywhere else, and your page stays on this device.",
      "km": "វាមកពីគេហទំព័រនេះ មិនមែនពីកន្លែងផ្សេងទេ ហើយទំព័ររបស់អ្នកនៅតែលើឧបករណ៍នេះ។"
     }
-   ],
-   "context": [
-    {
-     "url": "/S2Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S2.html",
-     "lang": "en",
-     "kind": "drawing"
-    }
    ]
   },
   {
@@ -382,18 +334,6 @@
      "key": "linesOutlined",
      "en": "The lines it found are outlined. Check the text against them.",
      "km": null
-    }
-   ],
-   "context": [
-    {
-     "url": "/S3Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S3.html",
-     "lang": "en",
-     "kind": "drawing"
     }
    ]
   },
@@ -470,18 +410,6 @@
      "en": "Your edits live only in this page. Copy or download them to keep them.",
      "km": "ការកែរបស់អ្នក មាននៅតែក្នុងទំព័រនេះ។ សូមចម្លង ឬទាញយក ដើម្បីរក្សាទុកវា។"
     }
-   ],
-   "context": [
-    {
-     "url": "/S4Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S4.html",
-     "lang": "en",
-     "kind": "drawing"
-    }
    ]
   },
   {
@@ -527,18 +455,6 @@
      "en": "Try another page",
      "km": "សាកល្បងទំព័រផ្សេង"
     }
-   ],
-   "context": [
-    {
-     "url": "/S5Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S5.html",
-     "lang": "en",
-     "kind": "drawing"
-    }
    ]
   },
   {
@@ -558,18 +474,6 @@
      "key": "showAnyway",
      "en": "Show what it read anyway",
      "km": "បង្ហាញអ្វីដែលវាបានអាន"
-    }
-   ],
-   "context": [
-    {
-     "url": "/S6Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S6.html",
-     "lang": "en",
-     "kind": "drawing"
     }
    ]
   },
@@ -631,18 +535,6 @@
      "en": "The gift of the Dhamma surpasses every gift. Dhammapada 354",
      "km": "ធម្មទាន ឈ្នះទានទាំងពួង។ ធម្មបទ ៣៥៤"
     }
-   ],
-   "context": [
-    {
-     "url": "/S7Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S7.html",
-     "lang": "en",
-     "kind": "drawing"
-    }
    ]
   },
   {
@@ -683,18 +575,6 @@
      "en": "Close",
      "km": "បិទ"
     }
-   ],
-   "context": [
-    {
-     "url": "/S8Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S8.html",
-     "lang": "en",
-     "kind": "drawing"
-    }
    ]
   },
   {
@@ -729,18 +609,6 @@
      "key": "listenNote",
      "en": "Listen sends only the words you selected to our voice service, which has Azure's Khmer voices read them aloud. Nothing is sent until you press Listen. Your image and the rest of the text stay on this device.",
      "km": "ស្តាប់ ផ្ញើតែពាក្យដែលអ្នកបានជ្រើស ទៅសេវាសំឡេងរបស់យើង ដែលឱ្យសំឡេងខ្មែររបស់ Azure អានឮៗ។ គ្មានអ្វីត្រូវបានផ្ញើទេ រហូតដល់អ្នកចុច ស្តាប់។ រូបភាព និងអត្ថបទផ្សេងទៀតរបស់អ្នក នៅលើឧបករណ៍នេះ។"
-    }
-   ],
-   "context": [
-    {
-     "url": "/S9Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S9.html",
-     "lang": "en",
-     "kind": "drawing"
     }
    ]
   },
@@ -801,18 +669,6 @@
      "key": "nothingLeaves",
      "en": "Nothing leaves this page until you press Ask.",
      "km": "គ្មានអ្វីចេញពីទំព័រនេះទេ រហូតដល់អ្នកចុច សួរ។"
-    }
-   ],
-   "context": [
-    {
-     "url": "/S10Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S10.html",
-     "lang": "en",
-     "kind": "drawing"
     }
    ]
   },
@@ -939,18 +795,6 @@
      "key": "x.credits.made-by",
      "en": "Silicon Wat℠, with Miss Aquarius℠ (AI collaboration, disclosed)",
      "km": null
-    }
-   ],
-   "context": [
-    {
-     "url": "/S7Km.html",
-     "lang": "km",
-     "kind": "drawing"
-    },
-    {
-     "url": "/S7.html",
-     "lang": "en",
-     "kind": "drawing"
     }
    ]
   },
